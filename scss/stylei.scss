@@ -1,0 +1,143 @@
+$pink: #e83e8c;
+$dark: #212529;
+$light: #f8f9fa;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $light;
+  color: $dark;
+  margin: 0;
+  padding-top: 80px; 
+}
+
+// Navbarnya
+.navbar {
+  background-color: $dark !important;
+  .navbar-brand {
+    font-weight: bold;
+    color: white;
+    img {
+      height: 40px;
+    }
+  }
+
+  .nav-link {
+    color: white !important;
+    font-weight: 500;
+    &:hover {
+      color: $pink !important;
+    }
+  }
+}
+
+.hero {
+    position: relative;
+    padding: 100px 0;
+  }
+  
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2;
+    color: white; 
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+
+.btn-pink {
+    background-color: #ff007f; 
+    color: white; 
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem; 
+    text-transform: uppercase; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-pink:hover {
+    background-color: #d40066;  
+    transform: translateY(-2px); 
+  }
+  
+  .btn-pink:active {
+    transform: translateY(2px); 
+  }
+  
+  
+// Product Sectionnya
+.product-section {
+  background-color: $light;
+  padding: 3rem 0;
+
+  .product-title {
+    color: $pink;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .product-specs {
+    list-style: none;
+    padding-left: 1.5rem;
+
+    li {
+      color: black;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+
+      strong {
+        font-weight: 600;
+        display: inline-block;
+        min-width: 140px;
+      }
+    }
+  }
+
+  .product-price {
+    color: $pink;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.contact {
+    background-color: $dark;
+    color: white;
+    padding: 4rem 0;
+  
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+  
+      p {
+        margin: 0;
+        flex: 1;
+      }
+    }
+  }
